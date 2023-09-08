@@ -1,6 +1,6 @@
 //your code here
 let arr = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
-console.log(arr);
+// console.log(arr);
 let articleLessArray = [];
 let mp = {};
 let regexp = /\bthe\b|\ban\b|\ba\b/gi;
