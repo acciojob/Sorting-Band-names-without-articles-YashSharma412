@@ -1,16 +1,16 @@
 //your code here
-let arr = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
+let mp = {};
+let touristSpots = ['The Virupaksha Temple', 'Victoria Memorial', 'Tajmahal'];
 // console.log(arr);
 let articleLessArray = [];
-let mp = {};
+let articleLessItem = [];
+
 let regexp = /\bthe\b|\ban\b|\ba\b/gi;
-
-for(let i=0; i<arr.length; i++){
-	let temp = arr[i].replace(regexp, "").trim();
-	temp = temp.replace(/  /g, " ");
-	articleLessArray.push(temp);
-
-	mp[temp]=arr[i];
+for(let i=0; i<touristSpots.length; i++){
+	articleLessItem = touristSpots[i].replace(regexp, "").trim();
+	articleLessItem = articleLessItem.replace(/  /g, " ");
+	articleLessArray.push(articleLessItem);
+	mp[articleLessItem]=touristSpots[i];
 }
 
 // console.log(articleLessArray);
