@@ -12,21 +12,27 @@ for(let i=0; i<touristSpots.length; i++){
 	articleLessArray.push(articleLessItem);
 	mp[articleLessItem]=touristSpots[i];
 }
-
 // console.log(articleLessArray);
-
 articleLessArray.sort();
 // console.log(articleLessArray);
-
 let ans = [];
-
 // for(let i in articleLessArray){
 // 	ans.push(mp[articleLessArray[i]]);
 // }
-
 for(let i of articleLessArray){
 	ans.push(mp[i]);
 }
 
-console.log(ans);
+let band_list_container = document.getElementById("band");
+for(let band of ans){
+	let li_band = document.createElement("li");
+	li_band.innerText = band;
+	band_list_container.appendChild(li_band);
+}
+
+
+
+
+
+
 
